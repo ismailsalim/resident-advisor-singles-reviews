@@ -4,12 +4,15 @@ Notebooks:
 
 1) Webscraping
 Notebook that executes web scraping algorithm.
+Language: Python
 This retrieves data from Resident Advisor's Singles Reviews pages:
 https://www.residentadvisor.net/reviews.aspx?format=single
 
 2) Preprocessing
+Language: Python
 
 3) Processing
+Language: R
 
 Files:
 
@@ -23,5 +26,5 @@ Files:
 
 Author: Ismail Salim, LSE/UC Berkeley
 
-Scraped data is open for anyone's use.
+Webscraped data is open for anyone's use.
 Further analysis is welcome.

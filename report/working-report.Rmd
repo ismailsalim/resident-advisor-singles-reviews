@@ -1,0 +1,19 @@
+---
+title: "Working Report"
+author: "Ismail Salim"
+date: "28/03/2018"
+output: github_document
+---
+### Review Counts
+- Number of reviews in raw df
+- Reviews over time 
+    - For all styles
+    - For each separate style
+    
+### Ratings
+- Summary statistics of ratings
+- Summary statistics for each style
+- Average rating each month of all styles
+- Average rating over time (monthly)
+- Chart of ratings
+
