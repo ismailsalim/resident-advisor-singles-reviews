@@ -9,19 +9,19 @@ monthly_stats <- df_dates %>%
          cumsum_count = cumsum(count))
 monthly_stats
 
-# set theme
-theme_set(theme_linedraw())
+# set ggplot theme
+theme_set(theme_minimal())
 
 # plotting monthly counts
 ggplot(monthly_stats) + 
   geom_line(aes(x = release_date, y = count))
 
 # plotting monthly counts 3mma
-jpeg(filename = "images/monthly-reviews-over-time")
+png(filename = "images/monthly-reviews-over-time")
 ggplot(monthly_stats) + 
   geom_line(aes(x = release_date, y = count_3mma)) +
   xlab("Release Date") + ylab("No. of Monthly Reviews (3mma)") +
-  ggtitle("Increasing Monthly Reviews")
+  ggtitle("RA getting busy.")
 dev.off()
 
 # plotting monthly ratings
@@ -29,10 +29,10 @@ ggplot(monthly_stats) +
   geom_line(aes(x = release_date, y = average_rating))
 
 # plotting monthly ratings 3mma
-pdf(filename = "images/monthly-ratings-over-time")
+png(filename = "images/monthly-ratings-over-time")
 ggplot(monthly_stats) + 
   geom_line(aes(x = release_date, y = average_rating_3mma)) + 
   xlab("Release Date") + ylab("Average Monthly Rating (3mma)") +
-  ggtitle("A Trend In Ratings?")
+  ggtitle("A trend in ratings??")
 dev.off()
 
